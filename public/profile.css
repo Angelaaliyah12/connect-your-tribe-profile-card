@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 200px 200px;
+
+}
+
+.photo{
+ grid-area: 1 / 1 / 4 / 2;
+    height: auto;
+   
+}
+.hearts{
+grid-area: 1 / 2 / 4 / 3; 
+    font-size: 70px;
+     width:30px; 
+    display: inline-block; 
+    animation: heartbeat 1s infinite ease-in-out;
+}
+.studie{
+  grid-area: 1 / 3 / 2 / 4;
+  color: rgb(226, 112, 131); 
+}
+
+h1{
+    font-size: 100px;
+   grid-area: 2 / 4 / 3 / 5;
+    color: rgb(226, 112, 131); 
+
+}
+ul{
+    list-style: none;
+    color: rgb(226, 112, 131); 
+}
+.prive{
+  grid-area: 3 / 5 / 4 / 6;
+color: rgb(226, 112, 131); 
+
+  }
+
+
+@keyframes heartbeat {
+
+  0%,100% {transform: scale(1); /*100% van de originele grootte (niets verandert*/
+  }
+
+ 50% {transform: scale(1.2); /*maakt een element 20% groter verticaal horizontaal blijft 100% */
+    }
+  
+}
+
+.heart-toggle {
+  display: none;
+}
+
+.hearts .broken {
+  display: none;
+}
+
+.heart-toggle:checked ~ .hearts .heart {
+  display: none;
+}
+
+.heart-toggle:checked ~ .hearts .broken {
+  display: inline;
+}
+
