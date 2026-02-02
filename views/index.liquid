@@ -1,14 +1,19 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+    <title>Visitekaartje</title>
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>
+  <body>
+  
 
-  <p>{{ person.name }}</p>
 
-  <footer></footer>
-</article>
+    <section class="heart-container">
+
+      <a href="/profile">
+      <img src="assets/heart.png " alt="Hartje" class="heart">
+      </a>
+     
+  </section>
 
 {% render 'partials/foot.liquid' %}
