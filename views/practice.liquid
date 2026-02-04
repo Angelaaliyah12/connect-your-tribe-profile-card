@@ -4,6 +4,9 @@
   </head>
   <body>
   
+<h1>Data-Driven Web</h1>
+<p>Ik ben dus {{ person.name }}</p>
+<p>Het is vandaag {{ 'now' | date: "%Y/%m/%d/%H:%M:%S" }}</p>
+<details><summary>Data</summary><pre>{{ person | json:4 }}</pre></details>
 
-<h1>Practice</h1>
 {% render 'partials/foot.liquid' %}
