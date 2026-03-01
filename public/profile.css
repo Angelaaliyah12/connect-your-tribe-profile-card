@@ -29,9 +29,20 @@ body {
       height: 600px;
     }
   }
+/*.heart{
+  font-size: 60px;
+  border:none;
+  background: none;
+  cursor:pointer;
 
+}
+.broken{
+  font-size: 60px;
+  border:none;
+  background: none;
+  cursor:pointer;
+} */
   .hearts {
-    font-size: 10px;
     display: flex;
     flex-direction: column;
     animation: heartbeat 1s infinite ease-in-out;
