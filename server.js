@@ -55,6 +55,11 @@ app.get('/practice', async function (request, response) {
    // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
    response.render('practice.liquid', {person: personResponseJSON.data})
 })
+
+app.get('/copy', async function (request, response) {
+   // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+   response.render('copy.liquid', {person: personResponseJSON.data})
+})
 // Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
 // Maak daar dan meer Routes voor aan, en koppel ze aan Views
 // app.get('/contact', function (request, response) {
@@ -72,7 +77,7 @@ app.post('/', async function (request, response) {
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80
-app.set('port', process.env.PORT || 8000)
+app.set('port', process.env.PORT || 8002)
 
 // Start Express op, haal daarbij het zojuist ingestelde poortnummer op
 app.listen(app.get('port'), function () {
